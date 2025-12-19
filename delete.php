@@ -7,7 +7,7 @@
 $ $con = mysqli_connect("localhost", "root", "");
 if(!$con) {
 die("Could not connect: "
-. mysql_error());
+. mysqli_error($con));
 }
 mysqli_select_db($con, "library");
 // 3) คำสั่ง SQL ลบข้อมูล
