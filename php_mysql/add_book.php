@@ -4,7 +4,7 @@
   // 1) เชื่อมต่อเซิร์ฟเวอร์
  $con = mysqli_connect("localhost", "root", "");
  if(!$con) {
-   die("Could not connect: " . mysql_error());
+   die("Could not connect: " . mysqli_connect_error());
  } 
  echo "สัมมะเร็จ!!!<br />";
  mysqli_set_charset($con,"utf8");
