@@ -4,10 +4,10 @@
 </head>
 <body>
 <?php
-$con = mysqli_connect ("localhost", "root", "default", "library");
+$con = mysqli_connect ("localhost", "root", "", "library");
 if(!$con) {
 die("Could not connect: "
-. mysqli_error($con = mysqli_connect ("localhost", "root", "default", "library")));
+. mysqli_error($con = mysqli_connect ("localhost", "root", "", "library")));
 }
 mysqli_select_db($con, "library");
 // 3) คำสั่ง SQL ลบข้อมูล
