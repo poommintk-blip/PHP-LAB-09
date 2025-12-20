@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-$con = mysqli_connect("localhost", "root", "");
+$con = mysqli_connect ("localhost", "root", "default", "library");
 if(!$con) {
 die("Could not connect: "
 . mysqli_connect_error());
